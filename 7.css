@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(165deg, #f9c4c4, #f5e1e1);
+  }
+
+article{
+    width: 50%;
+    margin: auto;
+}
+
+.title{
+    width: 100%;
+    font-size: 30px;
+    font-weight: 500;
+    /* opacity 透明度 */
+}
+
+.subtitle{
+    width: 100%;
+    font-size: 20px;
+}
+
+.tc-center{
+    text-align: center;
+    margin: 10px 0;
+}
+
+.link{
+    text-decoration: none;
+}
+
+input{
+    color: #f00;
+}
+
+button{
+    color: aquamarine;
+}
+
+.date-time{
+    opacity: 0.5;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        box-sizing: border-box;
+        margin: auto;
+        padding: auto;
+    }
+
+    .banner{
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        /* background img 设置背景图 */
+        background-image: url(./img/977446050_waifu2x_2x_3n_jpg.png);
+        background-size: 100% 100%;
+    }
+
+    .R-banner{
+        display: inline-block;
+        width: 400px;
+        height: 200px;
+        background-image: url(./img/book.png);
+        background-repeat: repeat;
+        /* 在x/y方向是否重复 */
+        background-position: center;
+        /* 居中 */
+        background-size: contain;
+        /* 设置图片是否铺满 */
+        /* cover铺满，contain保留 */
+    }
+
+    .font{
+        margin-left: 20px;
+        font-size: 40px;
+        /* 字体大小 */
+        font-weight: lighter;
+        /* 字体粗细 */
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-style: italic;
+        letter-spacing: 10px;
+        color: blue;
+        text-shadow:lightblue 0px 0 35px;
+    }
+</style>
+<body>
+    <!-- 基本背景图 -->
+    <div class="banner"></div>
+
+    <!-- 重复背景图 -->
+    <div class="R-banner"></div>
+
+    <hr>
+    <!-- 字体 -->
+    <div class="font">
+        <h1>
+            Mostima
+        </h1>
+    </div>
+</body>
+</html>

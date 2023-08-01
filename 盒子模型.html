@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      /*  * 代表选择所有元素，一般都使用borderbox */
+      /* border-sizing 转换盒模型 */
+      #wrapper {
+        width: 1000px;
+        height: 800px;
+        border: 4px solid rgb(179, 11, 11);
+        margin: auto;
+      }
+
+      /* 相对距离 */
+      /* content box 宽高只设置content */
+      #content-box {
+        box-sizing: content-box;
+        width: 1000px;
+        height: 800px;
+        border: 4px solid rgb(27, 17, 167);
+        margin: auto;
+      }
+
+      /* 绝对距离 */
+      /* .border-box 宽高设置content padding border */
+      #border-box {
+        box-sizing: border-box;
+        width: 1000px;
+        height: 800px;
+        margin: auto;
+        border: 4px solid #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper"></div>
+    <div id="content-box"></div>
+    <div id="border-box"></div>
+  </body>
+</html>

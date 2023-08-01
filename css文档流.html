@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .wrapper{
+        width: 1000px;
+        height: 1000px;
+        border: 1px solid #ccc;
+        margin: auto;
+    }
+
+    /* span,a,lable都是典型的inline元素 */
+    /* inline元素无法给宽度 */
+    /* inline元素从左往右排列为一行 */
+    /* display: inline-block 讲inline转为inline-block元素 */
+    /* inline-block从左往右排列且可以指定宽高 */
+    /* margin给与元素四个方向的外边距 前上后下 */
+    span,a,label{
+        display: inline-block;
+        width: 200px;
+        margin:  20px;
+        border: 3px solid #0ccb78;
+    }
+
+    /* p,div都是典型的block元素 */
+    /* block元素占据一行，从上往下排列，可以指定宽高 */
+    p{
+            width: 300px;
+            height: 30px;
+            border: 3px solid #ff0;
+            text-align: center;
+            margin: 20px;
+    }
+
+    .floot-item{
+        overflow-y:scroll ; 
+        /* 隐藏超出的部分 */
+        width: 100px;
+        height: 100px;
+        border: 2px solid #0ccb78;
+        color: #000000;
+        background-color: #ff0;
+    }
+    
+
+</style>
+<body>
+    <div class="wrapper">
+        <!-- inline元素 -->
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <span>原神，启动！</span>
+        <a href="https://www.yuanshen.com/#/" target="_blank">原神，启动！</a>
+
+        <p>下午四点，罗德岛魔术</p>
+        <p>下午四点，罗德岛魔术</p>
+        <p>下午四点，罗德岛魔术</p>
+        <p>下午四点，罗德岛魔术</p>
+        <p>下午四点，罗德岛魔术</p>
+        <p>下午四点，罗德岛魔术</p>
+
+        <label for="genshin">原神，启动！</label>
+        <input type="checkbox" name="genshin" id="genshin">
+    </div>
+
+    <div class="floot-item">
+        下午四点，罗德岛魔术
+        下午四点，罗德岛魔术
+        下午四点，罗德岛魔术
+        下午四点，罗德岛魔术
+        下午四点，罗德岛魔术
+        下午四点，罗德岛魔术
+    </div>
+</body>
+</html>
