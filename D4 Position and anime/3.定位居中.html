@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .big-box {
+        position: relative;
+        margin: auto;
+        width: 400px;
+        height: 400px;
+        border: 2px solid #000;
+      }
+
+      .small-box {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 100px;
+        height: 100px;
+        transform: translate(-50%, -50%);
+        /* translate改变元素位置 */
+        /* 50%：相对元素本身宽度改变位置 */
+        /* 单独改变 x / y, translate x / y  */
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-box">
+      <div class="small-box"></div>
+    </div>
+  </body>
+</html>

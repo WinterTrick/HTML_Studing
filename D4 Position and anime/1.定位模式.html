@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      .box {
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+
+      /* relative相对定位 */
+      /* 相对定位不脱离文档流 */
+      /* 1.absolute绝对定位 */
+      /* 2.绝对定位在没有相对元素时相对于浏览器左上角定位，脱离文档流 */
+      /* 3.有相对定位元素时，于相对元素左上角定位 */
+      .box-position {
+        position: absolute;
+        left: 400px;
+        top: 200px;
+        background-color: blue;
+      }
+
+      .wrapper{
+        width: 300px;
+        height: 300px;
+        border: 1px solid #000;
+        position: relative;
+        background-color: aqua;
+      }
+
+      .container{
+        position: relative;
+        left: 100px;
+        width: 500px;
+        height: 500px;
+        border: 1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box box-position"></div>
+    <div class="box"></div>
+    <div class="container">
+        <div class="wrapper">
+            <div class="box-position"></div>
+        </div>
+    </div>
+  </body>
+</html>

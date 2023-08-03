@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      .wrapper {
+        width: 541px;
+        height: 44px;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 10px rgb(166, 157, 157);
+        margin: 300px auto;
+        border-radius: 30px;
+      }
+
+      .positionYcenter {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .search {
+        left: 20px;
+      }
+
+      input {
+        width: 70px;
+        outline: none;
+        border: none;
+        left: 50px;
+        font-size: 16px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      .micro {
+        right: 50px;
+      }
+
+      .camera {
+        right: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="./imgs/search.png" alt="" class="search positionYcenter" >
+      <input
+        type="text"
+        placeholder="在谷歌中搜索或输入网址"
+        class="position-Ycenter"
+      />
+      <img src="./imgs/micro.png" alt="" class="micro positionYcenter">
+      <img src="./imgs/camera.png" alt="" class="camera positionYcenter">
+    </div>
+  </body>
+</html>
