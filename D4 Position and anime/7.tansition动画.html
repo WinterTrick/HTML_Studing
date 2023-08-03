@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="viewport" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        left: 0;
+        top: 100px;
+        transform: translateX(0);
+        transition: all 3s ease-in;
+        /* transision：属性 时间 算法 */
+      }
+
+      #box:hover {
+        width: 300px;
+        height: 300px;
+        transform: rotate(45deg) translateX(100px);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="box"></div>
+  </body>
+</html>
+<!-- 需要行动触发--hover -->

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      @keyframes auto-rotate {
+        from {
+          transform: rotate(0deg);
+        }
+        to {
+          transform: rotate(360deg);
+        }
+      }
+
+      .taiji {
+        position: relative;
+        width: 300px;
+        height: 300px;
+        border-radius: 100%;
+        border: 2px solid black;
+        margin: 300px auto;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(
+          90deg,
+          rgba(0, 0, 0, 1) 50%,
+          rgba(255, 255, 255, 1) 50%
+        );
+        overflow: hidden;
+      }
+
+      .taiji::before {
+        content: "";
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        background: rgb(0, 0, 0);
+        background: radial-gradient(
+          circle,
+          rgba(0, 0, 0, 1) 25%,
+          rgba(255, 255, 255, 1) 25%
+        );
+      }
+
+      .taiji::after {
+        content: "";
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        top: 150px;
+        transform: translateX(-50%);
+        background: rgb(255, 255, 255);
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 1) 25%,
+          rgba(0, 0, 0, 1) 25%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="taiji"></div>
+  </body>
+</html>
