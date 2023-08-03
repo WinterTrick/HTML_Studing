@@ -9,15 +9,21 @@
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        animation: rotate 3s linear infinite ;
       }
 
-      @keyframes auto-rotate {
+      @keyframes rotate {
         from {
           transform: rotate(0deg);
         }
         to {
           transform: rotate(360deg);
         }
+      }
+
+      .taiji:hover {
+        animation-name: rotate;
+        animation-duration: 1ms;
       }
 
       .taiji {
